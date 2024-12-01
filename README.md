@@ -1,5 +1,7 @@
-# AirBnB Clone - The Console
-The console is the first segment of the AirBnB project at Holberton School that will collectively cover fundamental concepts of higher level programming. The goal of AirBnB project is to eventually deploy our server a simple copy of the AirBnB Website(HBnB). A command interpreter is created in this segment to manage objects for the AirBnB(HBnB) website.
+# AirBnB clone - Web dynamic
+The console is the fourth and final segment of the AirBnB Clone project at Holberton/Atlas School that has collectively covered fundamental concepts of higher level programming. The goal of AirBnB Clone project is to eventually deploy our server a simple copy of the AirBnB Website(HBnB). In this segment, we make the website able to load objects from the client side using the RESTful API created in the last segment, which provided a communication interface between the front-end and the data (to retrieve, create, delete, and update them).
+
+The below information is mostly for the console created in the first segment of this project.
 
 #### Functionalities of this command interpreter:
 * Create a new object (ex: a new User or a new Place)
@@ -19,11 +21,12 @@ The console is the first segment of the AirBnB project at Holberton School that 
 * [License](#license)
 
 ## Environment
-This project is interpreted/tested on Ubuntu 14.04 LTS using python3 (version 3.4.3)
+This project is tested on Ubuntu 20.04 LTS using python3 (version 3.8.5), and interpreted on Chrome. (version 57.0)  
+This segment of the project has also been locally tested on macOS and Fedora Linux 40, using Python 3.8.20 and Python 3.13.0, and interpreted on Brave (version 1.73.91; Chromium: 131.0.6778.85)
 
 ## Installation
-* Clone this repository: `git clone "https://github.com/alexaorrico/AirBnB_clone.git"`
-* Access AirBnb directory: `cd AirBnB_clone`
+* Clone this repository: `git clone "https://github.com/Zytronium/atlas-AirBnB_clone_v4.git"`
+* Access AirBnb directory: `cd atlas-AirBnB_clone_v4`
 * Run hbnb(interactively): `./console` and enter command
 * Run hbnb(non-interactively): `echo "<command>" | ./console.py`
 
@@ -32,12 +35,12 @@ This project is interpreted/tested on Ubuntu 14.04 LTS using python3 (version 3.
 List of commands this console current supports:
 * `EOF` - exits console 
 * `quit` - exits console
-* `<emptyline>` - overwrites default emptyline method and does nothing
 * `create` - Creates a new instance of`BaseModel`, saves it (to the JSON file) and prints the id
 * `destroy` - Deletes an instance based on the class name and id (save the change into the JSON file). 
 * `show` - Prints the string representation of an instance based on the class name and id.
 * `all` - Prints all string representation of all instances based or not on the class name. 
 * `update` - Updates an instance based on the class name and id by adding or updating attribute (save the change into the JSON file). 
+* `<emptyline>` - overwrites default emptyline method and does nothing
 
 #### `models/` directory contains classes used for this project:
 [base_model.py](/models/base_model.py) - The BaseModel class from which future classes will be derived
@@ -154,14 +157,21 @@ EOF  all  create  destroy  help  quit  show  update
 No known bugs at this time. 
 
 ## Authors
-Alexa Orrico - [Github](https://github.com/alexaorrico) / [Twitter](https://twitter.com/alexa_orrico)  
-Jennifer Huang - [Github](https://github.com/jhuang10123) / [Twitter](https://twitter.com/earthtojhuang)  
-Jhoan Zamora - [Github](https://github.com/jzamora5) / [Twitter](https://twitter.com/JhoanZamora10)  
-David Ovalle - [Github](https://github.com/Nukemenonai) / [Twitter](https://twitter.com/disartDave)
 
-Harrison Gearhart - <harrison.gearhart@atlasschool.com>
-Daniel Stelljes - <daniel.stelljes@atlasschool.com>
+##### First part:
+Alexa Orrico - [GitHub](https://github.com/alexaorrico) / [Twitter](https://twitter.com/alexa_orrico)  
+Jennifer Huang - [GitHub](https://github.com/jhuang10123) / [Twitter](https://twitter.com/earthtojhuang)
 
-Second part of Airbnb: Joann Vuong
+##### Second part:
+Joann Vuong
+
+##### Third part:
+Jhoan Zamora - [GitHub](https://github.com/jzamora5) / [Twitter](https://twitter.com/JhoanZamora10)  
+David Ovalle - [GitHub](https://github.com/Nukemenonai) / [Twitter](https://twitter.com/disartDave)
+
+##### Fourth part:
+Harrison Gearhart - [GitHub](https://github.com/HarrisonGearhart)  
+Daniel Stelljes - [GitHub](https://github.com/Zytronium)  
+
 ## License
-Public Domain. No copy write protection. 
+Public Domain. No copyright protection. 
