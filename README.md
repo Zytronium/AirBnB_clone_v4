@@ -10,11 +10,10 @@ The below information is mostly for the console created in the first segment of 
 * Update attributes of an object
 * Destroy an object
 
-## Table of Content
+## Table of Contents
 * [Environment](#environment)
 * [Installation](#installation)
 * [File Descriptions](#file-descriptions)
-* [Usage](#usage)
 * [Examples of use](#examples-of-use)
 * [Bugs](#bugs)
 * [Authors](#authors)
