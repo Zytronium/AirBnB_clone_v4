@@ -1,7 +1,7 @@
 #!/bin/node
 $(function () {
     const amen = {};
-    $("input#check_amen").change(function () {
+    $("input.amenities-list").change(function () {
         if ($(this).is(":checked")) {
             amen[$(this).attr("data-name")] = $(this).attr("data-id");
         } else {
