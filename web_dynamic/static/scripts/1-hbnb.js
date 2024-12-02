@@ -1,3 +1,4 @@
+#!/bin/node
 $(function () {
     const amen = {};
     $("#input#check_amen").change(function () {
