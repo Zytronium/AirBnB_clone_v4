@@ -16,13 +16,16 @@ header .logo {
 }
 
 #api_status {
-    margin-right: 30px;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    background-color: #CCCCCC;
+  margin-left: auto;
+  position: fixed;
+  top: 15px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #CCCCCC;
+  z-index: 1000;
 }
-
-#api_status {
-    background-color: #FF545F;
+#api_status.available {
+  background-color: #FF545F;
 }

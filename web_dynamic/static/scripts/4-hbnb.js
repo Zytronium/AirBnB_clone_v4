@@ -14,13 +14,13 @@ $(document).ready(function () {
     $('.amenities h4').text(objNames.sort().join(', '));
   });
 
-  const apiUrl = 'http://0.0.0.0:5001/api/v1/status/';
-  $.get(apiUrl, function (data, status) {
-    if (data.status === 'OK' && status === 'success') {
+$.get('http://0.0.0.0:5001/api/v1/status/', function (data) {
+    if (data.status === 'OK') {
       $('#api_status').addClass('available');
     } else {
       $('#api_status').removeClass('available');
     }
+      console.log(`data.status:\n${data.status}`);
   });
 
   $('button[type="button"]').click(function () {
