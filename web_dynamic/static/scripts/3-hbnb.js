@@ -1,11 +1,14 @@
 #!/bin/node
 $(function () {
   const amen = {};
-  $('input#check_amen').change(function () {
+  $('input.amenities-list').change(function () {
+    const amenityName = $(this).attr('data-name');
+    const amenityId = $(this).attr('data-id');
+
     if ($(this).is(':checked')) {
-      amen[$(this).attr('data-name')] = $(this).attr('data-id');
+      amen[amenityName] = amenityId;
     } else {
-      delete amen[$(this).attr('data-name')];
+      delete amen[amenityName];
     }
     const objNames = Object.keys(amen);
     $('.amenities h4').text(objNames.sort().join(', '));
