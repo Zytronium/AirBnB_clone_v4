@@ -1,5 +1,14 @@
 # AirBnB clone - Web dynamic
-The console is the fourth and final segment of the AirBnB Clone project at Holberton/Atlas School that has collectively covered fundamental concepts of higher level programming. The goal of AirBnB Clone project is to eventually deploy our server a simple copy of the AirBnB Website(HBnB). In this segment, we make the website able to load objects from the client side using the RESTful API created in the last segment, which provided a communication interface between the front-end and the data (to retrieve, create, delete, and update them).
+
+The console is the fourth and final segment of the AirBnB Clone project at
+Holberton/Atlas School that has collectively covered fundamental concepts of
+higher level programming. The goal of AirBnB Clone project is to eventually
+deploy our server a simple copy of the AirBnB Website(HBnB). In this segment, we
+make the website able to load objects from the client side using the RESTful API
+created in the last segment, which provided a communication interface between
+the front-end and the data (to retrieve, create, delete, and update them).
+Specifically, the website should be able to display places and filter them by
+amenities.
 
 The below information is mostly for the console created in the first segment of this project.
 
@@ -15,7 +24,7 @@ The below information is mostly for the console created in the first segment of 
 * [Installation](#installation)
 * [File Descriptions](#file-descriptions)
 * [Examples of use (console)](#examples-of-use)
-* [How to run the web server](#running-the-web-server)
+* [Running the web server](#how-to-run-the-web-server)
 * [Bugs](#bugs)
 * [Authors](#authors)
 * [License](#license)
@@ -157,11 +166,22 @@ EOF  all  create  destroy  help  quit  show  update
 Running the web server, assuming you have the right environment, a
 database set up properly, a `mysql` or `mariadb` server running locally,
 and installed every package needed, just run `run_api.sh`, and then in
-a separate terminal, run `start_server.sh`. Ports 5000 & 5001 need to
-be available. Connect to the website at http://127.0.0.1:5000/4-hbnb. 
+a separate terminal, run `start_server.sh`. You may need to change the
+version of python the script is using. Ports 5000 & 5001 need to
+be available. Connect to the website at http://127.0.0.1:5000/4-hbnb, 
+http://0.0.0.0:5000/4-hbnb, or http://localhost:5000/4-hbnb.  
+Note: using localhost instead of 0.0.0.0 or 127.0.0.1 does not allow the API to
+work.
 
 ## Bugs
-No known bugs at this time. 
+- Place descriptions on the website seem to be cut off, seemingly at random places. Unsure if this is 
+due to the data imported from 100-dump.sql, or a bug in the code itself. 
+- The scrollable box container to select amenities to filter by moves too far
+down to move your mouse directly back onto it when too many amenities are selected.
+Right clicking and using the right click menu as a bridge allows you to keep
+using the container.
+- The list of selected amenities wraps down to the next line way too early.
+
 
 ## Authors
 
