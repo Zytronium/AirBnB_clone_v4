@@ -20,22 +20,18 @@ $.get('http://0.0.0.0:5001/api/v1/status/', function (data) {
     } else {
       $('#api_status').removeClass('available');
     }
-      console.log(`data.status:\n${data.status}`);
   });
 
   $('button[type="button"]').click(function () {
     const selectedAmenities = Object.values(amen);
     const placesApiUrl = 'http://0.0.0.0:5001/api/v1/places_search/';
 
-    console.log('Button Clicked.');
-    console.log(JSON.stringify({ amenities: selectedAmenities }));
     $.ajax({
       url: placesApiUrl,
       type: 'POST',
       contentType: 'application/json',
       data: JSON.stringify({ amenities: selectedAmenities }),
       success: function (data) {
-        console.log(`data: ${data}`);
         $('.places').empty();
         data.forEach((place) => {
           const article = `
