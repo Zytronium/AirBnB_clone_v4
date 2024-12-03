@@ -1,3 +1,4 @@
+#!/bin/bash
 HBNB_MYSQL_USER=hbnb_dev HBNB_MYSQL_PWD=hbnb_dev_pwd HBNB_MYSQL_HOST=localhost HBNB_MYSQL_DB=hbnb_dev_db HBNB_TYPE_STORAGE=db python3.8 -m web_dynamic.4-hbnb
 # Change "python3.8" to whatever version of python works best for you, perhaps just "python3"
 # Change "4-hbnb" (at the very end) to whichever hbnb you are testing. 4-hbnb is the last one.

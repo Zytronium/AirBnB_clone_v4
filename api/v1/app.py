@@ -1,5 +1,10 @@
 #!/usr/bin/python3
 """ Flask Application """
+import sys
+import os
+# allow python to find module 'models'
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
+
 from models import storage
 from api.v1.views import app_views
 from os import environ
@@ -41,9 +46,9 @@ Swagger(app)
 if __name__ == "__main__":
     """ Main Function """
     host = environ.get('HBNB_API_HOST')
-    port = int(environ.get('HBNB_API_PORT'))
+    port = environ.get('HBNB_API_PORT')
     if not host:
         host = '0.0.0.0'
     if not port:
-        port = '5000'
+        port = '5001'
     app.run(host=host, port=port, threaded=True)

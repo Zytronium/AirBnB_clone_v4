@@ -14,7 +14,8 @@ The below information is mostly for the console created in the first segment of 
 * [Environment](#environment)
 * [Installation](#installation)
 * [File Descriptions](#file-descriptions)
-* [Examples of use](#examples-of-use)
+* [Examples of use (console)](#examples-of-use)
+* [How to run the web server](#running-the-web-server)
 * [Bugs](#bugs)
 * [Authors](#authors)
 * [License](#license)
@@ -151,6 +152,13 @@ EOF  all  create  destroy  help  quit  show  update
 ** no instance found **
 (hbnb) quit
 ```
+
+## How to run the web server
+Running the web server, assuming you have the right environment, a
+database set up properly, a `mysql` or `mariadb` server running locally,
+and installed every package needed, just run `run_api.sh`, and then in
+a separate terminal, run `start_server.sh`. Ports 5000 & 5001 need to
+be available. Connect to the website at http://127.0.0.1:5000/4-hbnb. 
 
 ## Bugs
 No known bugs at this time. 
