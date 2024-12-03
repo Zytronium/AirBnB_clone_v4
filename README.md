@@ -31,7 +31,7 @@ The below information is mostly for the console created in the first segment of 
 
 ## Environment
 This project is tested on Ubuntu 20.04 LTS using python3 (version 3.8.5), and interpreted on Chrome. (version 57.0)  
-This segment of the project has also been locally tested on macOS and Fedora Linux 40, using Python 3.8.20 and Python 3.13.0, and interpreted on Brave (version 1.73.91; Chromium: 131.0.6778.85)
+This segment of the project has also been locally tested on macOS and Fedora Linux 40, using Python 3.8.20, and interpreted on Brave (version 1.73.91; Chromium: 131.0.6778.85)
 
 ## Installation
 * Clone this repository: `git clone "https://github.com/Zytronium/atlas-AirBnB_clone_v4.git"`
