@@ -71,7 +71,7 @@ Classes inherited from Base Model:
 * `def all(self)` - returns the dictionary __objects
 * `def new(self, obj)` - sets in __objects the obj with key <obj class name>.id
 * `def save(self)` - serializes __objects to the JSON file (path: __file_path)
-* ` def reload(self)` -  deserializes the JSON file to __objects
+* `def reload(self)` -  deserializes the JSON file to __objects
 
 #### `/tests` directory contains all unit test cases for this project:
 [/test_models/test_base_model.py](/tests/test_models/test_base_model.py) - Contains the TestBaseModel and TestBaseModelDocs classes
@@ -84,7 +84,7 @@ TestBaseModelDocs class:
 * `def test_bm_func_docstrings(self)` - Test for the presence of docstrings in BaseModel methods
 
 TestBaseModel class:
-* `def test_is_base_model(self)` - Test that the instatiation of a BaseModel works
+* `def test_is_base_model(self)` - Test that the instantiation of a BaseModel works
 * `def test_created_at_instantiation(self)` - Test created_at is a pub. instance attribute of type datetime
 * `def test_updated_at_instantiation(self)` - Test updated_at is a pub. instance attribute of type datetime
 * `def test_diff_datetime_objs(self)` - Test that two BaseModel instances have different datetime objects
@@ -178,7 +178,7 @@ work.
 due to the data imported from 100-dump.sql, or a bug in the code itself. 
 - The scrollable box container to select amenities to filter by moves too far
 down to move your mouse directly back onto it when too many amenities are selected.
-Right clicking and using the right click menu as a bridge allows you to keep
+Right-clicking and using the right click menu as a bridge allows you to keep
 using the container.
 - The list of selected amenities wraps down to the next line way too early.
 
